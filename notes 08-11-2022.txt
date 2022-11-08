@@ -1,0 +1,152 @@
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git remote
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git remote add origin ^[[200~https://github.com/pcshubham/myproject.git~
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to '?[200~https://github.com/pcshubham/myproject.git~'
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git commands.rtf
+        gitcommands.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git add j
+fatal: pathspec 'j' did not match any files
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git add *
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   git commands.rtf
+        new file:   gitcommands.txt
+
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git remote
+origin
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git remote add origin https://github.com/pcshubham/myproject.git
+error: remote origin already exists.
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to '?[200~https://github.com/pcshubham/myproject.git~'
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git push origin *
+fatal: invalid refspec 'git commands.rtf'
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git remote add origin https://github.com/pcshubham/myproject.git
+error: remote origin already exists.
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git remote add origin "https://github.com/pcshubham/myproject.git"
+error: remote origin already exists.
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git remote add origin https://github.com/pcshubham/myproject.git
+error: remote origin already exists.
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git remote
+origin
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git rm remote origin
+fatal: pathspec 'remote' did not match any files
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git remote rm origin
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git remote -v
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git remote add origin "https://github.com/pcshubham/myproject.git"
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git remote -v
+origin  https://github.com/pcshubham/myproject.git (fetch)
+origin  https://github.com/pcshubham/myproject.git (push)
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git commit -m "file submit"
+[master (root-commit) 7e5e27a] file submit
+ Committer: Group041 <Group041@infoway.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 11 insertions(+)
+ create mode 100644 git commands.rtf
+ create mode 100644 gitcommands.txt
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git push orgin master
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git push origin master
+-f
+
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git push origin master -f
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.19 KiB | 607.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$ git push origin master -f
+Everything up-to-date
+
+Group041@DESKTOP-2RB45A7 MINGW64 /c/Users/Group041/Documents/gitproject (master)
+$
